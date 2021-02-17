@@ -82,7 +82,7 @@ To keep the infrastructure as much secure as possible, 2 Security Groups have be
 - one to allow traffic from the Internet to the ALB, listening on port 80
 - one to allow traffic from the ALB to the EC2 instances on port 8080
 
-To be even more secure, the httpbin application has been setup to be run by the unprivileged user `ec2-user`, so that in case of a privileges escalation vulnerability, the compromised user will be a simple user, and not `root`.
+To be even more secure, the httpbin application has been setup to be run by the unprivileged user `httpbin-user`, so that in case of a privileges escalation vulnerability, the compromised user will be a simple user, and not `root`.
 
 ## Scalability
 To keep the infrastructure robust in case of a traffic increase, a very simple scalability has been implemented:
